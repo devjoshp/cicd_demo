@@ -38,7 +38,7 @@ resource "aws_security_group" "webserver" {
     ipv6_cidr_blocks = ["::/0"]
   }
 
-  tags {
+  tags = {
     Name = "webserver-${var.project_name}-${var.project_env}"
     project = var.project_name
     env = var.project_env
