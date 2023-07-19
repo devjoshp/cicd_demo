@@ -12,7 +12,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "zomato-prod-s3.devjosh.online"
+    bucket = "cicddemo.devjosh.online"
     key = terraform.tfstate
     region = "ap-south-1"
   }
